@@ -1,0 +1,71 @@
+#tasks {
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 2052px;
+  section.task-group {
+    float: left;
+    position: relative;
+    margin: 0 20px 20px 0;
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #000;
+
+    .task-list {
+      padding: 20px 0;
+      margin: 0;
+      list-style: none outside none;
+      background-color: #FFEACB;
+    }
+
+    .task {
+      position: relative;
+      margin: 5px 0;
+      padding: 5px 5px;
+      border: 1px solid #000;
+      background-color: #fff;
+      input[type="submit"], input[type="reset"] {
+        width: 100%;
+        height: 30px;
+      }
+      table {
+        width: 95%;
+      }
+      input[type="text"], textarea {
+        width: 100%;
+      }
+      textarea {
+        height: 50px;
+      }
+
+      article {
+        .edit-button-wrap {
+          display: none;
+          position: absolute;
+          right: 10px;
+          .edit-button {
+            text-decoration: none;
+            color: blue;
+          }
+        }
+
+        &:hover {
+          .edit-button-wrap {
+            display: block;
+          }
+        }
+      }
+      .edit-form {
+        display: none;
+      }
+    }
+
+    .empty-card {
+      display: none;
+    }
+
+    button {
+      width: 100%;
+      height: 40px;
+    }
+  }
+}
